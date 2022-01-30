@@ -36,16 +36,20 @@ function areatri(){
     const semiarea=(semip*(semip-lado1)*(semip-lado2)*(semip-lado3));
     let area=Math.sqrt(semiarea);
     alert(area);
-
 }
 console.groupEnd();
 console.group("Circulo");
-function perimetrocir(radio){
+function perici(){
+    const input=document.getElementById("Inputcir");
+    const radio=input.value;
     let perimetro = (2*(Math.PI))*radio;
-    return perimetro;
+    alert(perimetro);
 }
-function areacir(radio){
-    let area=(Math.PI)*(radio**2);
-    return area;
+function areaci(){
+    const input=document.getElementById("Inputcir");
+    const radio=input.value;
+    const racu=radio**2;
+    let area=(Math.PI)*(racu);
+    alert(area);
 }
 console.groupEnd();
